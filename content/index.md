@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Welcome to my site
+tags:
+  - index
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+My future website with all of my publicly shared notes
