@@ -1,24 +1,51 @@
 ---
 title: Locked Down Parental Controls for Children's Cellphones
 ---
+After dealing with the existing parental controls available on the market for our firstborn's cellphone I found the options very lacking. Most of the products had one or more of these problems:
+
+- Overpriced monthly fees
+- Inability to choose your own service carrier
+- Required frequent approving of this or that on behalf of the child
+- A tech-savvy kid could figure out how to break the parental controls
+- Child's account ages out of parental controls too early / young
+
+I wasn't happy with the solution we chose but after a while it felt too late to switch it up and I wasn't even sure what I would change.
+
+When the time came for our other child to get a phone I went to the pros: IT nerds. They all said the same thing and that was to use MDM. I didn't even know what that was.
+
+Long story short, MDM is the technology that larger businesses use to manage the phones and computers of their employees. There's a ton you can do with it. If you want to give someone a fully functioning phone that you just want to keep location tabs on you can do it. If you want to give someone a smartphone that can only make and receive phone calls you can do that.
+
+However, although the potential was there I found it's easier said than done and a lot of options are cost prohibitive as well. I ended up finding a popular service called ManageEngine MDM and after a lot of hair pulling I got it working and am very happy with it. The best part is that it's also free.
+
+Recently my kid accidentally broke their phone so I had to redo the MDM and realized I'd quickly forgotten how to set it up. So to save me time in the future, and to help other parents looking for a good solution, I set it up again and documented the process step by step.
+
+Hope this helps you.
+
 # About this Guide
 
-- This is for Android devices. I have tested and used this for my own child with a Google Pixel phone and can recommend that line
-- 
+- This guide is written for Android devices because that's what I prefer. I have tested and used this for my own child with an Android-based Google Pixel phone and I can recommend that line.
+- If you have a different Android phone this guide should still work fine but the website has a couple warnings about Samsung phones. They'll still work but there are some considerations you'll have to understand.
+- This guide DOES NOT cover setting up an iPhone BUT the basic premise / line-of-thinking should be the same. I'd suggest just thinking each step thru and you'll probably figure out what to do differently.
+- I've made this guide to help you figure it out for yourself. If I know you personally you can ask me for pointers AFTER you've set it up. I have considered setting it up for a fee though so I'll think about that.
+- I'm very happy with the result. It'll probably take an hour but I think it's worth it.
 
-> [!NOTE] A heads up for going forward with MDM
-> - Sometimes the website will say you only have a set amount of time for your account before you need to upgrade. This is just marketing and can be ignored.
- > - The website is very techie and this process is not the most intuitive (and I say this as a computer nerd). Just hang in there and do each step and it should work just fine.
-> - When you go to a menu item you haven't set up yet the website will often show a box with some boxes with options inside of it and some orange arrows pointing to different boxes. Just close this box and ignore.
+# What this Guide DOESN'T Cover
 
+- I don't use traditional parental controls like content filtering with this service simply because my configuration is locked down in a way that they wouldn't do much. A lot of that is due to the fact that there's no browser on my kids phone. If you want to include a browser I'd suggest setting up something like Google's Family Link after this guide.
+- At the end of the day nothing can stop your child from taking about some nefarious stuff on the phone or sending messages with content you wouldn't approve of to their friends or even a stranger. To stop that with technology is an arduous task and I would suggest it's a losing battle. Instead I choose to keep an open dialogue with my kids and raise them to make good choices for themselves in hopes that when they are alone with their phone that they'll make better choices. MDM or any other parental controls will never match being a good parent and/or member of society.
 
 # Setup Process Steps
+
+> [!NOTE] A heads up for going forward with ManageEngine MDM
+> - This process is not for the faint of heart. However, this guide should take almost all of the guessing out of it so I think most people can follow along just fine.
+> - Sometimes the website will say you only have a set amount of time for your account before you need to upgrade and pay. This is just marketing and can be ignored and you'll be fine with the free plan.
+> - When you go to a menu item that you haven't set up yet the website will often show a box with smaller boxes inside that have options and some orange arrows pointing to these different boxes. Just close this box and ignore.
 
 1. Sign up for a free account:
 	- Go [here](https://www.manageengine.com/mobile-device-management/free-trial.html?mdmfp_fmdms&cd) and create an account. You need to use your real email address but you can use whatever name and business name you'd like as there's no verification of those in the process. You do not need to enter your phone number.
 	- Confirm your email
 	- Choose a password
-	- Your account should be complete. Be aware that I received an error after completing but I followed the "return to home" link (or whatever it was called) and everything was fine and ready to go
+	- Your account should be complete. Be aware that I received an error after completing the account creation process but I followed the "return to home" link (or whatever it was called) and everything was fine and ready to go.
 
 2. Add your child as a User:
 	- Go to Enrollment --> Enroll --> Users
